@@ -1,4 +1,3 @@
-
 FROM node:lts-buster
 
 RUN apt-get update && \
@@ -10,7 +9,7 @@ RUN apt-get update && \
   npm i pm2 -g && \
   rm -rf /var/lib/apt/lists/*
   
-RUN git clone https://github.com/Black-Tappy/Shadow-Xtech-V1 /root/black_Bot
+RUN git clone https://github.com/Black-Tappy/Shadow-Xtech-V1 /root/black_BOt
 WORKDIR /root/black_Bot/
 
 
@@ -22,4 +21,4 @@ COPY . .
 
 EXPOSE 5000
 
-CMD ["npm", "run" , "body.js"]
+CMD ["node", "body.js"]
