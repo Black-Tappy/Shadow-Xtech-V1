@@ -14,7 +14,7 @@
   "env": {
     "PREFIX": {
       "description": "Choose your bot's prefix",
-      "value": "~",
+      "value": ".",
       "required": true
     },
     "AUTO_READ_STATUS": {
